@@ -24,6 +24,7 @@ class ShoeDetailsFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_shoe_details,container,false)
         binding.saveButton.setOnClickListener { saveShoeAndCloseDetails() }
+        binding.cancelButton.setOnClickListener { findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment()) }
         binding.shoe = Shoe("",0.0,"","")
         return binding.root
     }
