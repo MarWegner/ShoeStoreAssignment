@@ -6,7 +6,7 @@
           name="shoe"
           type="com.udacity.shoestore.models.Shoe" />
   </data>
-
+    <!-- This layout uses the ConstraintLayout in order to achieve this multicolumn layout while keeping the vertical orientation.-->
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
